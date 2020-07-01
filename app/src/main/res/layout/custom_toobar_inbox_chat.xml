@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="start">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="start">
+
+        <TextView
+            android:id="@+id/toolbar_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmed Eid"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/toolbar_contact_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Seen: "
+            android:textSize="14dp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/toolbar_contact_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/unknown_user"
+        android:layout_alignEnd="@+id/layout"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

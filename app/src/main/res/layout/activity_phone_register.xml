@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhoneRegisterActivity"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Phone Number Here.."
+        android:background="@drawable/edit_text_background"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_phonelink"
+        android:textAllCaps="false"
+        />
+
+    <EditText
+        android:id="@+id/input_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Verification Code Here.."
+        android:background="@drawable/edit_text_background"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/send_verification_code_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Verification Code"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:textAllCaps="false"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"/>
+
+</LinearLayout>
